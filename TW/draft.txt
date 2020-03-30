@@ -170,3 +170,33 @@ nav ul li ul li a:hover {
             </ul>
         </nav>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    VIDEOS
+
+
+    https://www.youtube.com/embed/0KdJDPWskVk?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com
+
+    https://youtubeembedcode.com/en/
+
+    <div class="video" style="--aspect-ratio: 3/4;"><iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="                "><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="http://add-link-exchange.com">add-link-Exchange</a></small></div><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode de</a></small></div><div><small><a href="http://add-link-exchange.com">addlink-exchange</a></small></div></iframe></div>
