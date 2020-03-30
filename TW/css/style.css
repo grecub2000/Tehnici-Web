@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+
+nav{
+    background-image: linear-gradient(to right, #990000,#000066 );
+    background-repeat: no-repeat;
+    font-size:18px;
+    line-height: 22px;
+    color:#ffcc00;
+    margin:0;
+    padding:0;
+    word-wrap:break-word !important;
+    font-family: "robot",sans-serif;   
+    position: relative;
+}
+
+
+a{
+    color:#ffcc00;
+}
+
+.toggle, [id^=drop]{
+    display:none;
+}
+
+.logo_img{
+    display: block;
+    float:left;
+    margin:0;
+    padding:4px;
+}
+
+#logo{
+    display:block;
+    margin: 0 0 0 10px;
+    padding:0 10px;
+    float:left;
+    font-size:25px;
+    line-height:50px;
+}
+
+#main-toggle {
+    border: none;
+    cursor:pointer;
+    float: right;
+    padding:25px 20px;
+    position: relative;
+    user-select: none;
+    color: rgba(255,0,0,0);
+}
+
+.nav-icon{
+    background:#ffcc00;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+}
+
+.nav-icon:before,
+.nav-icon:after{
+    background:#ffcc00;
+    content:" ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.nav-icon:before{
+    top:5px;
+}
+
+.nav-icon:after{
+    top:-5px;
+}
+
+nav:after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+nav ul{
+    float:right;
+    padding:0;
+    margin:0;
+    list-style:none;
+    position: relative;
+}
+
+nav ul li{
+    margin:0;
+    float:left;
+    background-image: linear-gradient(to left, #000066, #990000);
+}
+
+
+nav a{
+    display: block;
+    padding: 0 20px;
+    font-size:20;
+    line-height: 50px;
+    text-decoration: none;
+    border-left: 1px solid orange;
+}
+
+nav ul li ul li:hover{
+    background-color: #000066 ;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to left, #990000,#000066 );
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+
+}
+
+
+nav ul ul li {
+    width: 210px;
+    float:none;
+    display: list-item;
+    position: relative;
+    border-left: 1px solid orange;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top:-50px;
+    left:210px;
+    border-left: 1px solid orange;
+}
+
+nav ul li:hover>ul {
+    display: inherit;
+
+}
+
+li>a:after{
+    content: " ▼";
+}
+
+li>a:only-child:after {
+    content:"";
+}
+
+.content {
+    color: white;
+    padding: 1% 15%;
+}
+
+.titles {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+    color:#ffcc00; 
+    clear: both;
+}
+
+.text {
+    float: left;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.content_img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.links {
+    color: #ffcc00;
+    text-decoration: none;
+}
+@media all and ( max-width:1050px) {
+
+
+
+nav{
+    margin:0;
+}
+
+nav ul{
+    float:none;
+}
+
+.toggle+a,
+.menu{
+    display:none;
+}
+
+.toggle{
+    display: block;
+    background-color: #990000;
+    padding:0 20px;
+    color: #ffcc00;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    border:none;
+    border-left: 1px solid orange;
+}
+
+.toggle:hover{
+    background-image: linear-gradient(to left, #990000,#000066 );
+}
+
+[id^=drop]:checked+ul {
+    display:block;
+
+}
+
+nav ul li{
+    display: block;
+    width: 100%;
+}
+
+nav ul ul .toggle,
+nav ul ul a{
+    padding: 0 40px;
+
+}
+
+nav ul ul ul a{
+    padding: 0 50px;
+    background-color: #00091a;
+}
+
+nav ul li ul li .toggle,
+nav ul ul a {
+    background-color:#001a4d;
+}
+
+nav ul ul{
+    float: none;
+    position: static;
+    color: #ffcc00;
+}
+
+nav ul ul li:hover>ul,
+nav ul li:hover>ul{
+    display: none;
+    background-color: yellow;
+
+}
+
+nav ul ul li{
+    display: block;
+    width:100%;
+}
+
+nav ul ul ul li{
+    position: static;
+}
+
+nav ul a {
+    background-color: #990000;
+}
+
+}
+
+
+
