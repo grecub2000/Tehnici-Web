@@ -244,24 +244,24 @@ Footer
     </footer>
 
 
-        <img src="img/honurs_bck.jpg" alt="Honours_background" class="img_honours">
-        <img src="img/trophies/Champions-League.png" alt="Honours_img">
-        <img src="img/trophies/Fifa-Club-World-Cup.png" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Recopa-d-Europa.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Copa-de-Fires.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/European-Super-Cup.png" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Copa-Llatina.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/la-liga.png" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Spanish-Cup.png" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Supercopa-Espanya.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Copa-de-la-Lliga.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Campionat-de-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Supercopa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Copa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
-        <img src="img/trophies/Eva-Duarte.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/honurs_bck.jpg" alt="Honours_background" class="img_honours">
+            <img src="img/trophies/Champions-League.png" alt="Honours_img">
+            <img src="img/trophies/Fifa-Club-World-Cup.png" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Recopa-d-Europa.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Copa-de-Fires.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/European-Super-Cup.png" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Copa-Llatina.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/la-liga.png" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Spanish-Cup.png" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Supercopa-Espanya.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Copa-de-la-Lliga.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Campionat-de-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Supercopa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Copa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
+            <img src="img/trophies/Eva-Duarte.jpg" alt="Honours_img" class="tropy_honours_img">
 
 
 
