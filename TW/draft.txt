@@ -200,3 +200,77 @@ nav ul li ul li a:hover {
     https://youtubeembedcode.com/en/
 
     <div class="video" style="--aspect-ratio: 3/4;"><iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="                "><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="http://add-link-exchange.com">add-link-Exchange</a></small></div><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode de</a></small></div><div><small><a href="http://add-link-exchange.com">addlink-exchange</a></small></div></iframe></div>
+
+
+
+
+Footer
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+.footer ul{
+    display: inline-block;
+    text-align: left;
+    padding:0;
+    margin:0;
+    list-style:none;
+    position: relative;
+}
+
+.footer ul li{
+    margin:0;
+    float:left;
+    text-decoration: none;
+}
+
+
+<footer class="footer">
+        <p>Site Created by: Grecu Bogdan</p>
+        <p>Contact information: </p>
+        <ul>
+            <li><a href="mailto:acbc2815@gmail.com" target="_blank">Mail</a>
+            <li><a href="https://www.facebook.com/grecubg/" target="_blank">Facebook</a>
+            <li><a href="https://twitter.com/BogdanGrecu2000" target="_blank">Twitter</a>
+            <li><a href="https://github.com/grecub2000/" target="_blank">GitHub</a>
+        </ul>
+    </footer>
+
+
+        <img src="img/honurs_bck.jpg" alt="Honours_background" class="img_honours">
+        <img src="img/trophies/Champions-League.png" alt="Honours_img">
+        <img src="img/trophies/Fifa-Club-World-Cup.png" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Recopa-d-Europa.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Copa-de-Fires.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/European-Super-Cup.png" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Copa-Llatina.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/la-liga.png" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Spanish-Cup.png" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Supercopa-Espanya.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Copa-de-la-Lliga.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Campionat-de-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Supercopa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Copa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
+        <img src="img/trophies/Eva-Duarte.jpg" alt="Honours_img" class="tropy_honours_img">
+
+
+
+
+
+
+
+
+
+
+
+

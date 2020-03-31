@@ -3,6 +3,9 @@
 body{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
 }
 
 
@@ -40,8 +43,9 @@ a{
     margin: 0 0 0 10px;
     padding:0 10px;
     float:left;
-    font-size:25px;
+    font-size: 1.3rem;
     line-height:50px;
+    font-weight: bolder;
 }
 
 #main-toggle {
@@ -157,6 +161,7 @@ li>a:only-child:after {
 .content {
     color: white;
     padding: 1% 15%;
+    padding-bottom: 2.5rem;
 }
 
 .titles {
@@ -212,6 +217,156 @@ li>a:only-child:after {
     width:100%;
     position:absolute;
 }
+
+
+.content_squad{
+    color: white;
+    padding: 1% 5%;
+    padding-bottom: 2.5rem;
+    background-color: white;
+    border: 3rem solid #000066;
+    border-radius: 80px;
+    
+}
+
+.grid {
+    font-size: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid a {
+    margin: 2px;
+    border: 4px solid transparent;
+    opacity: .8;
+    transition: all .3s ease-in;
+}
+
+.grid a:hover {
+    border-color: #990000;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.grid a img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+.titles_s {
+    background-image: linear-gradient(to right, #990000,#000066);  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    clear: both;
+}
+
+.content_img_s {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_honours {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.center_text_honours {
+    background-image: linear-gradient(to right, #990000,#000066);  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    text-align: center;
+    margin: 0 auto 0;
+    max-width: 66.8rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+
+.center_text_honours_text {
+    background-image: linear-gradient(to right, #990000,#000066);  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    text-align: center;
+    margin: 0 auto 3rem;
+    max-width: 66.8rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: bolder;
+}
+
+.trophy_box{
+    width: 90%;
+    padding: 0px;
+    border: 1px solid gray;
+    background-color: gainsboro;
+    margin: 0;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.img_honours {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+.text_honours {
+    color: black;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding-left: 35%;
+    padding-right: 5%;
+    font-weight: bolder;
+    display: block;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+
+.tropy_honours_img {
+    width: 30%;
+    height: 30%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
 
 @media all and ( max-width:1050px) {
 
@@ -297,6 +452,59 @@ nav ul ul ul li{
 nav ul a {
     background-color: #990000;
 }
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid a {
+    margin: 2px;
+    border: 4px solid transparent;
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+
+
+.trophy_box{
+    width: 90%;
+    padding: 0px;
+    line-height: 100px;
+    border: 1px solid gray;
+    background-color: gainsboro;
+    margin: 0;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text_honours {
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    display: inline;
+    vertical-align: top;
+    padding-left: 0;
+    float: left;
+}
+
+
+.tropy_honours_img {
+    width: 50%;
+    height: auto;
+    padding: 0;
+    position: relative;
+    display: block;
+    margin-left: 0 auto;
+    border-radius: 10px 0 0 10px;
+    float: none;
+}
+
+
 
 }
 
