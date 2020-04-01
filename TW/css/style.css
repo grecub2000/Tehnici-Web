@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 body{
     margin:0;
     padding: 0;
@@ -9,7 +9,7 @@ body{
 }
 
 
-nav{
+header nav{
     background-image: linear-gradient(to right, #990000,#000066 );
     background-repeat: no-repeat;
     font-size:18px;
@@ -84,13 +84,13 @@ a{
     top:-5px;
 }
 
-nav:after{
+header nav:after{
     content:"";
     display: table;
     clear:both;
 }
 
-nav ul{
+header nav ul{
     float:right;
     padding:0;
     margin:0;
@@ -98,14 +98,14 @@ nav ul{
     position: relative;
 }
 
-nav ul li{
+header nav ul li{
     margin:0;
     float:left;
     background-image: linear-gradient(to left, #000066, #990000);
 }
 
 
-nav a{
+header nav a{
     display: block;
     padding: 0 20px;
     font-size:20;
@@ -114,15 +114,15 @@ nav a{
     border-left: 1px solid orange;
 }
 
-nav ul li ul li:hover{
+header nav ul li ul li:hover{
     background-color: #000066 ;
 }
 
-nav a:hover {
+header nav a:hover {
     background-image: linear-gradient(to left, #990000,#000066 );
 }
 
-nav ul ul{
+header nav ul ul{
     display: none;
     position: absolute;
     top: 50px;
@@ -130,7 +130,7 @@ nav ul ul{
 }
 
 
-nav ul ul li {
+header nav ul ul li {
     width: 210px;
     float:none;
     display: list-item;
@@ -138,14 +138,14 @@ nav ul ul li {
     border-left: 1px solid orange;
 }
 
-nav ul ul ul li {
+header nav ul ul ul li {
     position: relative;
     top:-50px;
     left:210px;
     border-left: 1px solid orange;
 }
 
-nav ul li:hover>ul {
+header nav ul li:hover>ul {
     display: inherit;
 
 }
@@ -218,6 +218,55 @@ li>a:only-child:after {
     position:absolute;
 }
 
+
+
+
+.footer {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    border-top: 3px double white;
+}
+
+.footer nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer nav ul{
+}
+
+.footer nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+
+.footer nav ul li a {
+    font-weight: 1000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.footer nav ul li a::before {
+    content: "| ";
+}
+
+.footer nav ul li a::after {
+    content: " |";
+}
+
+.footer nav p {
+    background-image: linear-gradient(to right, yellow,  #990000);  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    
+}
 
 .content_squad{
     color: white;
@@ -353,12 +402,26 @@ li>a:only-child:after {
     display: block;
     padding-bottom: 0;
     padding-top: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 
+.text_honours_b {
+    color: black;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    padding-left: 32%;
+    padding-right: 5%;
+    font-weight: bolder;
+    display: block;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
 .tropy_honours_img {
     width: 30%;
-    height: 30%;
+    height: auto;
     padding: 0;
     margin: 0;
     float: left;
@@ -372,11 +435,11 @@ li>a:only-child:after {
 
 
 
-nav{
+header nav{
     margin:0;
 }
 
-nav ul{
+header nav ul{
     float:none;
 }
 
@@ -406,53 +469,62 @@ nav ul{
 
 }
 
-nav ul li{
+header nav ul li{
     display: block;
     width: 100%;
 }
 
-nav ul ul .toggle,
-nav ul ul a{
+header nav ul ul .toggle,
+header nav ul ul a{
     padding: 0 40px;
 
 }
 
-nav ul ul ul a{
+header nav ul ul ul a{
     padding: 0 50px;
     background-color: #00091a;
 }
 
-nav ul li ul li .toggle,
-nav ul ul a {
+header nav ul li ul li .toggle,
+header nav ul ul a {
     background-color:#001a4d;
 }
 
-nav ul ul{
+header nav ul ul{
     float: none;
     position: static;
     color: #ffcc00;
 }
 
-nav ul ul li:hover>ul,
-nav ul li:hover>ul{
+header nav ul ul li:hover>ul,
+header nav ul li:hover>ul{
     display: none;
     background-color: yellow;
 
 }
 
-nav ul ul li{
+header nav ul ul li{
     display: block;
     width:100%;
 }
 
-nav ul ul ul li{
+header nav ul ul ul li{
     position: static;
 }
 
-nav ul a {
+header nav ul a {
     background-color: #990000;
 }
 
+.footer nav ul li a {
+    font-weight: 500;
+    font-size: 1re;
+    text-decoration: none;
+}
+
+.footer nav ul{
+    
+}
 
 .grid {
     display: grid;
@@ -471,38 +543,57 @@ nav ul a {
 
 
 .trophy_box{
-    width: 90%;
+    width: 60%;
     padding: 0px;
-    line-height: 100px;
+    line-height: 30px;
     border: 1px solid gray;
     background-color: gainsboro;
     margin: 0;
-    display: inline-block;
+    display: block;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
 }
 
 .text_honours {
     color: black;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: bolder;
-    display: inline;
-    vertical-align: top;
-    padding-left: 0;
-    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
+    padding: 0 3%;
+    margin: 0;
+}
+
+
+.text_honours_b {
+    color: black;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
+    padding: 0 3%;
 }
 
 
 .tropy_honours_img {
-    width: 50%;
+    width: 100%;
     height: auto;
     padding: 0;
-    position: relative;
-    display: block;
-    margin-left: 0 auto;
-    border-radius: 10px 0 0 10px;
-    float: none;
+    margin: 0;
+    float: left;
+    border-radius: 10px 10px 0 0;
 }
+
 
 
 
