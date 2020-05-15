@@ -269,8 +269,560 @@ Footer
 
 
 
+,
+    {
+        question: 'What year was the club formed? ',
+        answers: [
+        { text: '1899', correct: true},
+        { text: '1901', correct: false},
+		{ text: '1908', correct: false},
+		{ text: '1921', correct: false}
+        ]
+    },
+    {
+        question: 'What football ground does the club use?',
+        answers: [
+        { text: 'Stamford Bridge', correct: false},
+        { text: 'Bernabeu', correct: false},
+		{ text: 'Old Trafford', correct: false},
+		{ text: 'Camp Nou', correct: true}
+        ]
+    },
+    {
+        question: 'What is the club s stadium capacity?',
+        answers: [
+        { text: '45,354', correct: false},
+        { text: '65,354', correct: false},
+		{ text: '99,354', correct: true},
+		{ text: '142,325', correct: false}
+        ]
+    },
+    {
+        question: 'Who is the club s president?',
+        answers: [
+        { text: 'Ernesto Valverde', correct: false},
+        { text: 'Roman Abrahimovich', correct: false},
+		{ text: 'Pep Guardiola', correct: false},
+		{ text: 'Josep Bartomeu', correct: true}
+        ]
+    },
+    {
+        question: 'Who was the head coach of the club in the 2018/19 season?',
+        answers: [
+            { text: 'Ernesto Valverde', correct: true},
+            { text: 'Roman Abrahimovich', correct: false},
+            { text: 'Pep Guardiola', correct: false},
+            { text: 'Josep Bartomeu', correct: false}
+        ]
+    },
+    {
+        question: 'Which of these Barcelona players has won the Balon D Or?',
+        answers: [
+            { text: 'Lionel Messi', correct: true},
+            { text: 'Jordi Alba', correct: false},
+            { text: 'Sergi Roberto', correct: false},
+            { text: 'Coutinho', correct: false}
+        ]
+    },
+    {
+        question: 'What year did FC Barcelona become the first Spanish club to win the continental treble?',
+        answers: [
+            { text: '2008', correct: false},
+            { text: '2009', correct: true},
+            { text: '2010', correct: false},
+            { text: '2011', correct: false}
+        ]
+    },
+    {
+        question: 'Who led the founding of the club?',
+        answers: [
+            { text: 'Joan Gamper', correct: true},
+            { text: 'Josep Bartomeu', correct: false},
+            { text: 'Roman Abrahimovich', correct: false},
+            { text: 'Josep Maria', correct: false}
+        ]
+    },
+    {
+        question: 'Who wrote the club s anthem?',
+        answers: [
+            { text: 'Joan Gamper', correct: false},
+            { text: 'Josep Bartomeu', correct: false},
+            { text: 'Roman Abrahimovich', correct: false},
+            { text: 'Josep Maria', correct: true}
+        ]
+    }
+
+
+
+function getDogs () {
+    fetch('http://localhost:3000/dogs', {
+        method: 'get'
+    }).then((response) => {
+        response.json().then((data) => {
+            //am adus datele
+            var body = document.getElementsByTagName("body")[0];
+            var ul = document.createElement("ul");
+            ul.setAttribute("id", "dog-list")
+            for(let i = 0; i < data.length; i++) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(data[i].name));
+                var updateButton = document.createElement("button");
+                updateButton.appendChild(document.createTextNode("Change dog"));
+                updateButton.style.marginLeft = "3%";
+                var deleteButton = document.createElement('button');
+                deleteButton.appendChild(document.createTextNode("Delete dog"));
+                deleteButton.style.marginLeft = "3%";
+                deleteButton.onclick = function() { deleteDog(data[i].id)}
+                var img = document.createElement("img");
+                img.setAttribute("src", data[i].img);
+                img.style.width = "50px";
+                img.style.height = "50px";
+                img.style.marginLeft = "3%";
+                li.appendChild(updateButton);
+                li.appendChild(deleteButton);
+                li.appendChild(img);
+                li.appendChild(document.createElement("hr"));
+                li.style.marginTop = "3%";
+                ul.appendChild(li);
+            }
+            body.appendChild(ul);
+        })
+    })
+}
+getDogs();
+function addDog() {
+    var name = document.getElementById("input-name").value;
+    var img = document.getElementById("input-img").value;
+    var newDog = {
+        name: name,
+        img: img
+    }
+    fetch('http://localhost:3000/dogs', {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newDog)
+    }).then(function(response) {
+        console.log(response);
+    })
+}
+function deleteDog(id) {
+    fetch('http://localhost:3000/dogs/' + id, {
+        method: 'delete',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(function(response) {
+        window.location.reload();
+    })
+}
+function updateDog() {
+    var id = document.getElementById("input-id").value;
+    var name = document.getElementById("input-update-name").value;
+    var img = document.getElementById("input-update-img").value;
+    var newDog = {
+        name: name,
+        img: img
+    }
+    console.log(newDog, id)
+    fetch('http://localhost:3000/dogs/' + id, {
+        method: 'put',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newDog)
+    }).then(function(response) {
+        window.location.reload();
+    })
+}
+
+
+/* json-server --watch Desktop/TW/db.json */
+
+
+const startBtn = document.getElementById("start-btn")
+const nextButton = document.getElementById("next-btn")
+const HighscoreButton = document.getElementById("hscr-btn")
+const ManageButton = document.getElementById("manage-btn")
+const startText = document.getElementById("start-title")
+const questionContElem = document.getElementById('question-container')
+const questionElem = document.getElementById('question')
+const answerButtons = document.getElementById('answer-buttons')
+const scoreText = document.getElementById('score-txt')
+const enc = document.getElementById('enc-txt')
+var check_user
+var check_pass
+var score
+var checked
+var question = []
+var questionrequest = new XMLHttpRequest();
+questionrequest.open('GET','http://localhost:3000/questions');
+questionrequest.onload = function(){
+    questions = JSON.parse(questionrequest.responseText);
+};
+questionrequest.send();
+let shuffledQ, currentQindex
+
+
+
+
+startBtn.addEventListener("click", startGame)
+nextButton.addEventListener("click", () => {
+    currentQindex++
+    set_next_q()
+})
+
+function startGame()
+{   
+    checked = 0
+    score = 0
+
+    console.log('started')
+    startBtn.classList.add('hide')
+    HighscoreButton.classList.add('hide')
+    ManageButton.classList.add('hide')
+    startText.classList.add('hide')
+    shuffledQ = questions.sort(() => Math.random() - .5)
+    currentQindex = 0
+    scoreText.innerText = 'Score:'
+    scoreText.innerText += 0
+    questionContElem.classList.remove('hide')
+    scoreText.classList.remove('hide')
+    enc.innerText = 'You can do it!'
+    enc.classList.remove('hide')
+    set_next_q()
+}
+
+
+function set_next_q()
+{   
+    checked = 0
+    resetState()
+    showQuestion(shuffledQ[currentQindex])
+}
+
+
+function showQuestion(question)
+{   
+    enc.innerText = "Come on, "
+    for(let i = 0; i < users.length; i++)
+        {
+            if(users[i].username == check_user)
+            {
+                let nameuser = users[i].name
+                enc.innerText += nameuser
+                break
+            }
+        }
+    enc.innerText += "!! You can do it!"
+    questionElem.innerText = question.question
+    question.answers.forEach(answer =>{
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        if (answer.correct)
+        {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', is_checked)
+        answerButtons.appendChild(button)
+    })
+}
+
+function is_checked(e)
+{   
+    if(checked == 0)
+    {
+        select_answer(e)
+    }
+}
+
+function resetState()
+{
+    clearStatusClass(document.getElementById('quiz-bd'))
+    nextButton.classList.add('hide')
+    while (answerButtons.firstChild)
+    {
+        answerButtons.removeChild
+        (answerButtons.firstChild)
+    }
+}
+
+function select_answer(e)
+{   
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.getElementById('quiz-bd') , correct)
+    Array.from(answerButtons.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+
+    if(correct)
+    {
+        score++
+        scoreText.innerText = 'Score: '
+        scoreText.innerText += score
+        enc.innerText = 'Good job, '
+        for(let i = 0; i < users.length; i++)
+        {
+            if(users[i].username == check_user)
+            {
+                let nameuser = users[i].name
+                enc.innerText += nameuser
+                break
+            }
+        }
+        enc.innerText +='!! (づ｡◕‿‿◕｡)づ '
+    }
+    else
+    {
+        enc.innerText = 'Better luck next time :('
+    }
+    
+    if (shuffledQ.length > currentQindex + 1)
+    {
+        nextButton.classList.remove('hide')
+    }
+    else
+    {   
+        nhs = 0;
+        checkHighScore()
+        if(nhs == 1)
+        {
+            enc.innerText = 'Congrats! You beat your highest score. Your new High Score is:'
+            enc.innerText += score
+        }
+        else
+        {
+            enc.innerText = 'Maybe one more round?'
+        }
+        startBtn.innerText = 'Restart'
+        startBtn.classList.remove('hide')
+        HighscoreButton.classList.remove('hide')
+    }
+    checked = 1
+}
+
+function checkHighScore()
+{   
+    let j
+    for(let i = 0; i < users.length; i++)
+    {
+        if(users[i].username == check_user)
+        {
+            j = i
+            break
+        }
+    }
+
+    if(users[j].score <= score)
+    {
+        nhs = 1
+        setHighScore()
+    }
+    
+}
+
+
+
+function setHighScore()
+{
+    let i
+    for(i = 0; i < users.length; i++)
+    {
+        if(users[i].username == check_user)
+        {
+            break
+        }
+    }
+    let idu = users[i].id
+    let name = users[i].name
+    let email = users[i].email
+    var UserUP = {
+        "username": check_user,
+        "password": check_pass,
+        "name": name,
+        "email": email,
+        "score": score
+    }
+    console.log(UserUP, idu)
+    fetch('http://localhost:3000/users/' + idu, {
+        method: 'put',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(UserUP)
+    }).then(function(response) {
+        console.log(response)
+    })
+}
 
 
 
 
 
+function setStatusClass(element, correct)
+{
+    clearStatusClass(element)
+    if(correct)
+    {   
+        element.classList.add('correct')
+    }
+    else
+    {
+        element.classList.add('wrong')
+    }
+}
+
+function clearStatusClass(element)
+{
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
+
+
+const loginform = document.getElementById('login')
+const loginbutt = document.getElementById('loginbtn')
+const registerbutt = document.getElementById('registerbtn')
+loginbutt.addEventListener('click', login)
+registerbutt.addEventListener('click',to_register)
+
+var users;
+var usersrequest = new XMLHttpRequest();
+usersrequest.open('GET','http://localhost:3000/users');
+usersrequest.onload = function()
+{
+    users = JSON.parse(usersrequest.responseText);
+}
+usersrequest.send();
+
+function check_login()
+{
+    if(localStorage.username)
+    {  
+        login_succes()
+    }
+}
+
+function login_succes()
+{   
+
+    loginform.classList.add("hide")
+    startBtn.classList.remove("hide")
+    startText.classList.remove("hide")
+    HighscoreButton.classList.remove("hide")
+    if(localStorage.username == "admin")
+    {
+        ManageButton.classList.remove("hide")
+    }
+    check_login = 1
+}
+
+
+function login()
+{   
+    check_pass = document.getElementById('password').value
+    check_user = document.getElementById('username').value
+    let user = document.getElementById("username").value
+    let pass = document.getElementById("password").value
+    let ok = 0
+    for(let i = 0; i < users.length; i++)
+    {
+        if(users[i].username == user && users[i].password == pass )
+        {
+            ok = 1
+            break
+        }
+    }
+    if(ok)
+    {
+        localStorage.setItem("username",user)
+        login_succes()
+    }
+    else
+    {
+        let warning = document.getElementById("warning")
+        warning.innerText = "Username or Password Incorrect"
+        
+    }
+}
+
+
+function to_register()
+{
+    document.getElementById("warning").innerText = ''
+    document.getElementById('registerform').classList.remove('hide')
+    loginbutt.removeEventListener('click',login)
+    loginbutt.addEventListener('click',to_login)
+    registerbutt.removeEventListener('click',to_register)
+    registerbutt.addEventListener('click', register)
+}
+
+function to_login()
+{
+    document.getElementById('warning').innerText = ''
+    document.getElementById('registerform').classList.add('hide')
+    loginbutt.removeEventListener('click',to_login)
+    loginbutt.addEventListener('click', login)
+    registerbutt.removeEventListener('click', register)
+    registerbutt.addEventListener('click', to_register)
+
+}
+
+
+function register()
+{
+    let user = document.getElementById('username').value
+    let pass = document.getElementById('password').value
+    let passc = document.getElementById('confirmpassword').value
+    let name = document.getElementById('fullname').value
+    let email = document.getElementById('email').value
+    let warning = document.getElementById('warning')
+    if(pass != passc)
+    {
+        warning.innerText = 'Passwords are not the same'
+    }
+    else
+    {
+        let ok = 1
+        for(let i = 0; i < users.length; i++)
+        {
+            if(users[i].username == user)
+            {
+                ok = 0
+                break
+            }
+        }
+
+        if(ok == 0)
+        {
+            warning.innerText = 'Username already exists!'
+        }
+        else
+        {
+            var newuser = {
+                "username": user,
+                "password": pass,
+                "name": name,
+                "email": email,
+                "score": 0
+            }
+            console.log(newuser)
+            fetch('http://localhost:3000/users', {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newuser)
+            }).then(function(response){
+                console.log(response)
+            })
+        }
+    }
+    
+}
+
+window.onload = function(){
+    check_login()
+}

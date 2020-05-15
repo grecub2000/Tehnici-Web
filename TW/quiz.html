@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FC Barcelona - Squad</title>
+    <title>FC Barcelona</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
-<body style="background-color: #000066">
+<body style="background-image: linear-gradient(to left, #990000,#000066 20% );">
     <header>
         <nav>
             <img src="img/logo.png" alt="Barcelona Logo" class="logo_img">
-            <div id="logo"><a href="index.html">FC BARCELONA</a></div>            <label for="drop" class="toggle" id='main-toggle'><span
+            <div id="logo"><a href="index.html">FC BARCELONA</a></div>
+            <label for="drop" class="toggle" id='main-toggle'><span
             class="nav-icon"></span></label>
             <input type="checkbox" id="drop">
             <ul class="menu">
@@ -64,66 +66,65 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <h1 class="center_text">FC Barcelona - First Team</h1>
-        <img src="img/squad_s.jpg" alt="Squad_SMenu" class="content_img_s">
+    <div class="quiz-body" id="quiz-bd">
+        <div class="quiz-container">
+            <div id="start-title" class = "title hide"><a>Quiz - FC Barcelona</a></div>
+            <div id="score-txt" class = "score hide"><a></a></div>
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div id="enc-txt" class ="enc hide"><a>You can do it!</a></div>
+            <div class="controls">
+                
+                <button id="start-btn" class="start-btn btn hide">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <button id="hscr-btn" class="hscr-btn btn hide">Highscores</button>
+                <button id="manage-btn" class="manage-btn btn hide">Manage Questions</button>
+                <button id="logout-btn" class="logout btn hide">Logout</button>
+                <button id="btomenu-btn" class="btomenu btn hide">Back to Menu</button>
+                <button id="reset-scores-btn" class="reset-scores btn hide">Reset Highscores</button>
+            </div>
+            <div id="highscore-title" class = "highscore title hide">
+                <a>Current HighScores: </a>
+            </div>
+            <div id="highscore-text" class="highscore title hide">
+                
+
+            </div>
+            <form id = "login" class = "login-body">
+                <div id = "logininput">
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password"><br>
+                    <div id = "registerform" class="hide">
+                        <label for='password'>Confirm Password</label><br>
+                        <input type='password' id='confirmpassword'><br>
+                        <label for='fullname'>Full Name</label><br>
+                        <input type='text' id='fullname'><br>
+                        <label for='email'>Email</label><br>
+                        <input type='text' id='email'><br>
+
+                    </div>
+                </div> 
+                <div id = "loginbutons" class = "login-buttons">
+                    <button type="button" class = "btn" id = "loginbtn">Login</button>
+                    <button type="button" class = "btn" id = "registerbtn">Register</button>
+                </div>
+                <p id = "warning"></p>
+            </form>
+        </div>
     </div>
-    <div class="content_squad">
-        <div class="jump_menu">
-            <a href="#gks">Goalkeepers</a>
-            <a href="#defs">Defenders</a>
-            <a href="#mids">Midfielders</a>
-            <a href="#forwards">Forwards</a>
-            <a href="#coach">Coach</a>
-        </div>
-        <h2 class="titles_s" id="gks">Goalkeepers</h2>
-        <div class="grid">
-            <a href="#"><img src="img/players/ter-stegen.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/neto.jpg" alt="player"></a>
-           
-        </div>
-        <h2 class="titles_s" id="defs">Defenders</h2>
-        <div class="grid">
-            <a href="#"><img src="img/players/semedo.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/pique.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/lenglet.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/jordi-alba.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/roberto.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/umtiti.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/firpo.jpg" alt="player"></a>
-        </div>
-        <h2 class="titles_s" id="mids">Midfielders</h2>
-        <div class="grid">
-            <a href="#"><img src="img/players/rakitic.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/busquets.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/arthur.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/de-jong.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/vidal.jpg" alt="player"></a>
-        </div>
-        <h2 class="titles_s" id="forwards">Forwards</h2>
-        <div class="grid">
-            <a href="#"><img src="img/players/suarez.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/messi.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/dembele.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/griezmann.jpg" alt="player"></a>
-            <a href="#"><img src="img/players/braithwaite.jpg" alt="player"></a>
-        </div>
-        <h2 class="titles_s" id="coach">Coach</h2>
-        <div class="grid">
-            <a href="#"><img src="img/players/coach.jpg" alt="player"></a>
-        </div>
-    </div>
-    <footer class="footer">
-        <nav class="f_nav">
-            <p>Site Created by: Grecu Bogdan</p>
-            <p>Contact information: </p>
-            <ul>
-                <li><a href="mailto:acbc2815@gmail.com" target="_blank">Mail</a>
-                <li><a href="https://www.facebook.com/grecubg/" target="_blank">Facebook</a>
-                <li><a href="https://twitter.com/BogdanGrecu2000" target="_blank">Twitter</a>
-                <li><a href="https://github.com/grecub2000/" target="_blank">GitHub</a>
-            </ul>
-        </nav>
-    </footer>
+
+
+
+
+    
 </body>
 </html>

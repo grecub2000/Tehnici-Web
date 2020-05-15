@@ -1,0 +1,80 @@
+{
+  "questions": [
+    {
+      "question": "What season did Barça win La Liga with the most games in hand?",
+      "answers": [
+        {
+          "text": "1973/74",
+          "correct": true
+        },
+        {
+          "text": "1985/86",
+          "correct": false
+        },
+        {
+          "text": "1984/85",
+          "correct": false
+        },
+        {
+          "text": "2018/19",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How many league titles have Barcelona won in total?",
+      "answers": [
+        {
+          "text": "21",
+          "correct": false
+        },
+        {
+          "text": "33",
+          "correct": false
+        },
+        {
+          "text": "30",
+          "correct": false
+        },
+        {
+          "text": "26",
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "name": "Grecu Bogdan",
+      "email": "cevamail@22323.com",
+      "score": 2,
+      "id": 1
+    },
+    {
+      "username": "usernormal",
+      "password": "parola123",
+      "name": "User Normal",
+      "email": "ddsasdaaa@22323.com",
+      "score": 5,
+      "id": 2
+    },
+    {
+      "username": "usernou",
+      "password": "parola123",
+      "name": "User Nou",
+      "email": "usernou@new.com",
+      "score": 7,
+      "id": 3
+    },
+    {
+      "username": "cevanou",
+      "password": "cevaparola",
+      "name": "Grecu Cristian",
+      "email": "email@gmail.ro",
+      "score": 420,
+      "id": 4
+    }
+  ]
+}

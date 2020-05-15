@@ -234,8 +234,7 @@ li>a:only-child:after {
 }
 
 
-.footer nav ul{
-}
+
 
 .footer nav ul li{
     display: inline-block;
@@ -444,10 +443,159 @@ li>a:only-child:after {
     border-radius: 6px 0 0 6px;
 }
 
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+
+}
+
+.quiz-body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue),100%, 20%);
+}
+
+.quiz-body.correct {
+    --hue: var(--hue-correct);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue),100%, 20%);
+}
+
+.quiz-body.wrong {
+    --hue: var(--hue-wrong);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue),100%, 20%);
+}
 
 
+.quiz-container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn, .hscr-btn, .manage-btn,.logout,.reset-scores, .btomenu {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    clear: both;
+    margin: 0px;
+    width: 300px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+}
+
+.controls button {
+    margin: 2px auto;
+}
+
+.hide {
+    display: none;
+}
 
 
+.title{
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.title a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.score{
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.score a{
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.enc{
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.enc a{
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.login-body{
+    align-items: center;
+    text-align: center;
+}
+
+.login-buttons{
+    margin: 10px;
+}
 
 @media all and ( max-width:1280px) {
 
@@ -540,10 +688,7 @@ li>a:only-child:after {
         text-decoration: none;
     }
     
-    .footer nav ul{
-        
-    }
-    
+   
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -607,7 +752,6 @@ li>a:only-child:after {
         margin-bottom: 10px;
         margin-right: auto;
         margin-left: auto;
-        vertical-align: middle;
     }
     
     .text_honours {
@@ -757,9 +901,6 @@ li>a:only-child:after {
         text-decoration: none;
     }
     
-    .footer nav ul{
-        
-    }
     
     .grid {
         display: grid;
@@ -810,7 +951,6 @@ li>a:only-child:after {
         margin-bottom: 10px;
         margin-right: auto;
         margin-left: auto;
-        vertical-align: middle;
     }
     
     .text_honours {
@@ -876,7 +1016,14 @@ li>a:only-child:after {
         transition: all .3s ease-in;
     }
     
-    
+    .start-btn, .next-btn, .hscr-btn, .manage-btn, .logout,.reset-scores,.btomenu {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        clear: both;
+        margin: 0px;
+        width: 200px;
+    }
     
 }
 
