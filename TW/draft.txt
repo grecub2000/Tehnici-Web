@@ -1,205 +1,6 @@
-<img src="img/exit.svg" alt="exit menu">
-
-<img src="img/menu.svg" alt="toggle menu" class="menu" id="menu">
-
-
-<img src="img/Logo.svg" alt="Barcelona Logo" class="logo">
-                <a href="#" class="hide-desktop">
-                    #
-                </a>
-                <label class="logoname">FC Barcelona</label>
-                <ul class="show-desktop hide-desktop" id="nav">
-                    <li id="exit" class="exit-btn hide-desktop">#</li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Squad</a></li>
-                    <li><a href="#">Matches</a>
-                        <ul>
-                            <li><a href="#">Fixtures</a>
-                            <li><a href="#">Results</a>
-                            <li><a href="#">Historic Matches</a>
-                        </ul>
-                    </li>
-                    <li><a href="#">History</a>
-                        <ul>
-                            <li><a href="#">Honours</a>
-                            <li><a href="#">Legends</a>
-                            <li><a href="#">Coaches</a>
-                        </ul>
-                    </li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Social</a>
-                        <ul>
-                            <li><a href="https://twitter.com/fcbarcelona">Twitter</a>
-                            <li><a href="https://www.facebook.com/fcbarcelona">Facebook</a>
-                            <li><a href="https://www.instagram.com/fcbarcelona/">Instagram</a>
-                            <li><a href="https://www.youtube.com/user/fcbarcelona">YouTube</a>
-                            <li><a href="https://www.tiktok.com/@fcbarcelona">TikTok</a>
-                        </ul>
-                    </li>
-
-
-                </ul>
-            </nav>
 
 
 
-
-
-
-
-
-.containter{
-    width: 100%;
-    text-align: center;
-    vertical-align: bottom;
-    line-height: 120px;
-    height: 120px;
-    background-image: linear-gradient(to right, #990000,#000066 );
-}
-
-.logo{
-    float: left;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 30px;
-    height: 100%;
-    margin: 0px 15px 15px 0px;
-
-}
-
-
-.logoname{
-    font-family: arial;
-    color: white;
-    font-size: 10px;
-    line-height: 45px;
-    float: left;
-    padding: 0;
-    margin: 0 0 0 60px;
-}
-
-nav ul{
-    list-style: none;
-    float:left;
-    margin: 0 0 0 150px;
-    text-align: center;
-}
-
-nav ul li {
-    float: left;
-    list-style: none;
-    position: relative;
-    text-align: center;
-}
-
-nav ul li a {
-    display: block;
-    font-family: arial;
-    color: #000066;
-    font-size: 10px;
-    padding: 24px 14px;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: bottom;
-    line-height: normal;
-
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color:#ffcc00;
-    border-radius: 0px 0px 5px 5px;
-}
-
-nav ul li:hover ul {
-    display: block;
-    transition: 0.5s;
-}
-
-
-nav ul li ul li a {
-    padding: 12px 14px;   
-}
-
-nav ul li ul li a:hover {
-    background-image: linear-gradient(to left, rgba(255,0,0,0), #990000);
-}
-
-
-
-
-
-<header>
-        <nav class="desktop">
-            <img src="img/logo.png" alt="Barcelona Logo" class="logo_img">
-            <div class="logo">
-                <a href="#" class="logo_text">FC BARCELONA</a>
-            </div>
-            <i class=" fa fa-bars menu-toggle"></i>
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Squad</a></li>
-                <li><a href="#">Matches</a>
-                    <ul>
-                        <li><a href="#">Fixtures</a>
-                        <li><a href="#">Results</a>
-                        <li><a href="#">Historic Matches</a>
-                    </ul>
-                </li>
-                <li><a href="#">History</a>
-                    <ul>
-                        <li><a href="#">Honours</a>
-                        <li><a href="#">Legends</a>
-                        <li><a href="#">Coaches</a>
-                    </ul>
-                </li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Social</a>
-                    <ul>
-                        <li><a href="https://twitter.com/fcbarcelona">Twitter</a>
-                        <li><a href="https://www.facebook.com/fcbarcelona">Facebook</a>
-                        <li><a href="https://www.instagram.com/fcbarcelona/">Instagram</a>
-                        <li><a href="https://www.youtube.com/user/fcbarcelona">YouTube</a>
-                        <li><a href="https://www.tiktok.com/@fcbarcelona">TikTok</a>
-                    </ul>
-                </li>
-
-
-            </ul>
-        </nav>
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    VIDEOS
-
-
-    https://www.youtube.com/embed/0KdJDPWskVk?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com
-
-    https://youtubeembedcode.com/en/
-
-    <div class="video" style="--aspect-ratio: 3/4;"><iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="                "><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="http://add-link-exchange.com">add-link-Exchange</a></small></div><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode de</a></small></div><div><small><a href="http://add-link-exchange.com">addlink-exchange</a></small></div></iframe></div>
 
 
 
@@ -242,29 +43,6 @@ Footer
             <li><a href="https://github.com/grecub2000/" target="_blank">GitHub</a>
         </ul>
     </footer>
-
-
-            <img src="img/honurs_bck.jpg" alt="Honours_background" class="img_honours">
-            <img src="img/trophies/Champions-League.png" alt="Honours_img">
-            <img src="img/trophies/Fifa-Club-World-Cup.png" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Recopa-d-Europa.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Copa-de-Fires.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/European-Super-Cup.png" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Copa-Llatina.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/la-liga.png" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Spanish-Cup.png" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Supercopa-Espanya.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Copa-de-la-Lliga.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Trophy-Silhouette.png" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Campionat-de-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Supercopa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Copa-Catalunya.jpg" alt="Honours_img" class="tropy_honours_img">
-            <img src="img/trophies/Eva-Duarte.jpg" alt="Honours_img" class="tropy_honours_img">
-
-
-
 
 
 
@@ -825,4 +603,93 @@ function register()
 
 window.onload = function(){
     check_login()
+}
+
+
+
+
+
+
+
+
+
+{
+  "questions": [
+    {
+      "question": "What season did Barça win La Liga with the most games in hand?",
+      "answers": [
+        {
+          "text": "1973/74",
+          "correct": true
+        },
+        {
+          "text": "1985/86",
+          "correct": false
+        },
+        {
+          "text": "1984/85",
+          "correct": false
+        },
+        {
+          "text": "2018/19",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How many league titles have Barcelona won in total?",
+      "answers": [
+        {
+          "text": "21",
+          "correct": false
+        },
+        {
+          "text": "33",
+          "correct": false
+        },
+        {
+          "text": "30",
+          "correct": false
+        },
+        {
+          "text": "26",
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "name": "Grecu Bogdan",
+      "email": "cevamail@22323.com",
+      "score": 2,
+      "id": 1
+    },
+    {
+      "username": "usernormal",
+      "password": "parola123",
+      "name": "User Normal",
+      "email": "ddsasdaaa@22323.com",
+      "score": 5,
+      "id": 2
+    },
+    {
+      "username": "usernou",
+      "password": "parola123",
+      "name": "User Nou",
+      "email": "usernou@new.com",
+      "score": 7,
+      "id": 3
+    },
+    {
+      "username": "cevanou",
+      "password": "cevaparola",
+      "name": "Grecu Cristian",
+      "email": "email@gmail.ro",
+      "score": 420,
+      "id": 4
+    }
+  ]
 }

@@ -526,7 +526,7 @@ li>a:only-child:after {
     --hue: var(--hue-wrong);
 }
 
-.start-btn, .next-btn, .hscr-btn, .manage-btn,.logout,.reset-scores, .btomenu {
+.start-btn, .next-btn, .hscr-btn, .manage-btn,.logout,.reset-scores, .btomenu, .delete-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
@@ -595,6 +595,12 @@ li>a:only-child:after {
 
 .login-buttons{
     margin: 10px;
+}
+
+.manage-body
+{
+    align-items: center;
+    text-align: center;
 }
 
 @media all and ( max-width:1280px) {
@@ -1016,7 +1022,7 @@ li>a:only-child:after {
         transition: all .3s ease-in;
     }
     
-    .start-btn, .next-btn, .hscr-btn, .manage-btn, .logout,.reset-scores,.btomenu {
+    .start-btn, .next-btn, .hscr-btn, .manage-btn, .logout,.reset-scores,.btomenu, .delete-btn {
         font-size: 1rem;
         font-weight: bold;
         padding: 10px 20px;

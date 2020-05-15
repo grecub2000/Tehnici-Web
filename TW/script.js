@@ -7,6 +7,7 @@ const HighscoreButton = document.getElementById("hscr-btn")
 const ResetScores = document.getElementById("reset-scores-btn")
 const MenuButton = document.getElementById("btomenu-btn")
 const ManageButton = document.getElementById("manage-btn")
+const DeleteButton = document.getElementById("delete-btn")
 const LogoutButton = document.getElementById("logout-btn")
 const startText = document.getElementById("start-title")
 const questionContElem = document.getElementById('question-container')
@@ -20,6 +21,17 @@ var score
 var checked
 var question = []
 var questionrequest = new XMLHttpRequest();
+const loginform = document.getElementById('login')
+const loginbutt = document.getElementById('loginbtn')
+const registerbutt = document.getElementById('registerbtn')
+const manageBD = document.getElementById('manage-user')
+const manageTitle = document.getElementById('manage-title')
+const manageText = document.getElementById('manage-text')
+loginbutt.addEventListener('click', login)
+registerbutt.addEventListener('click',to_register)
+var users;
+var usersrequest = new XMLHttpRequest();
+
 questionrequest.open('GET','http://localhost:3000/questions');
 questionrequest.onload = function(){
     questions = JSON.parse(questionrequest.responseText);
@@ -27,16 +39,6 @@ questionrequest.onload = function(){
 questionrequest.send();
 let shuffledQ, currentQindex
 
-const loginform = document.getElementById('login')
-const loginbutt = document.getElementById('loginbtn')
-const registerbutt = document.getElementById('registerbtn')
-loginbutt.addEventListener('click', login)
-registerbutt.addEventListener('click',to_register)
-
-
-
-var users;
-var usersrequest = new XMLHttpRequest();
 usersrequest.open('GET','http://localhost:3000/users');
 usersrequest.onload = function()
 {
@@ -49,6 +51,9 @@ startBtn.addEventListener("click", startGame)
 LogoutButton.addEventListener("click", local_clear)
 HighscoreButton.addEventListener("click", to_highscores)
 MenuButton.addEventListener("click", to_menu)
+ManageButton.addEventListener("click", to_manage)
+DeleteButton.addEventListener("click", to_delete)
+
 nextButton.addEventListener("click", () => {
     currentQindex++
     set_next_q()
@@ -431,6 +436,9 @@ function to_menu()
 {
 
     HighscoreTitle.classList.add('hide')
+    manageText.innerHTML = ""
+    manageText.classList.add('hide')
+    manageBD.classList.add('hide')
     HighscoreText.innerHTML = ""
     HighscoreText.classList.add('hide')
     startBtn.classList.remove('hide')
@@ -441,10 +449,45 @@ function to_menu()
     {
         ResetScores.classList.add('hide')
         ManageButton.classList.remove('hide')
+        DeleteButton.classList.add('hide')
     }
     MenuButton.classList.add('hide')
 }
 
+function to_manage()
+{
+    MenuButton.classList.remove('hide')
+    startText.classList.add('hide')
+    scoreText.classList.add('hide')
+    enc.classList.add('hide')
+    questionContElem.classList.add('hide')
+    startBtn.classList.add('hide')
+    HighscoreButton.classList.add('hide')
+    LogoutButton.classList.add('hide')
+    startText.classList.add('hide')
+    ManageButton.classList.add('hide')
+    DeleteButton.classList.remove('hide')
+    manageBD.classList.remove('hide')
+    manageTitle.classList.remove('hide')
+    manageText.classList.remove('hide')
+    for(let i = 0; i < users.length; i++)
+    {
+        manageText.innerHTML += "<p> Username: " + users[i].username + "<br> ID: " + users[i].id + "<br> </p>"
+    }
+}
+
+function to_delete()
+{
+    let DelUserID = document.getElementById("userdel").value
+    fetch('http://localhost:3000/users/' + DelUserID, {
+        method: 'delete',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(function(response) {
+        window.location.reload();
+    })
+}
 
 window.onload = function(){
     check_login()

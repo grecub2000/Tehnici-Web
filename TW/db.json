@@ -59,22 +59,6 @@
       "email": "ddsasdaaa@22323.com",
       "score": 5,
       "id": 2
-    },
-    {
-      "username": "usernou",
-      "password": "parola123",
-      "name": "User Nou",
-      "email": "usernou@new.com",
-      "score": 7,
-      "id": 3
-    },
-    {
-      "username": "cevanou",
-      "password": "cevaparola",
-      "name": "Grecu Cristian",
-      "email": "email@gmail.ro",
-      "score": 420,
-      "id": 4
     }
   ]
 }
