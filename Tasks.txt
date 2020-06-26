@@ -1,0 +1,9 @@
+1.4 durata executie C
+1.7 ravase C
+1.8 ascunde imagini C
+1.16 salut, utilizator! C
+
+2.3 aparitie treptata titlu C
+
+3.2 Quiz C 
+3.14 Highscores C

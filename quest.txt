@@ -1,0 +1,128 @@
+{
+    "questions": [
+    {
+        "question": "What season did Barça win La Liga with the most games in hand?",
+        "answers": [
+            {
+                "text": "1973/74",
+                "correct": true
+            },
+            {
+                "text": "1985/86",
+                "correct": false
+            },
+            {
+                "text": "1984/85",
+                "correct": false
+            },
+            {
+                "text": "2018/19",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "How many league titles have Barcelona won in total?",
+        "answers": [
+            {
+                "text": "21",
+                "correct": false
+            },
+            {
+                "text": "33",
+                "correct": false
+            },
+            {
+                "text": "30",
+                "correct": false
+            },
+            {
+                "text": "26",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "What year was the club formed? ",
+        "answers": [
+        	{ "text": "1899", "correct": true},
+        	{ "text": "1901", "correct": false},
+		{ "text": "1908", "correct": false},
+		{ "text": "1921", "correct": false}
+        ]
+    },
+    {
+        "question": "What football ground does the club use?",
+        "answers": [
+        	{ "text": "Stamford Bridge", "correct": false},
+        	{ "text": "Bernabeu", "correct": false},
+		{ "text": "Old Trafford", "correct": false},
+		{ "text": "Camp Nou", "correct": true}
+        ]
+    },
+    {
+        "question": "What is the club s stadium capacity?",
+        "answers": [
+        	{ "text": "45,354", "correct": false},
+        	{ "text": "65,354", "correct": false},
+		{ "text": "99,354", "correct": true},
+		{ "text": "142,325", "correct": false}
+        ]
+    },
+    {
+        "question": "Who is the club s president?",
+        "answers": [
+        	{ "text": "Ernesto Valverde", "correct": false},
+        	{ "text": "Roman Abrahimovich", "correct": false},
+		{ "text": "Pep Guardiola", "correct": false},
+		{ "text": "Josep Bartomeu", "correct": true}
+        ]
+    },
+    {
+        "question": "Who was the head coach of the club in the 2018/19 season?",
+        "answers": [
+            	{ "text": "Ernesto Valverde", "correct": true},
+            	{ "text": "Roman Abrahimovich", "correct": false},
+            	{ "text": "Pep Guardiola", "correct": false},
+            	{ "text": "Josep Bartomeu", "correct": false}
+        ]
+    },
+    {
+        "question": "Which of these Barcelona players has won the Balon D Or?",
+        "answers": [
+            { "text": "Lionel Messi", "correct": true},
+            { "text": "Jordi Alba", "correct": false},
+            { "text": "Sergi Roberto", "correct": false},
+            { "text": "Coutinho", "correct": false}
+        ]
+    },
+    {
+        "question": "What year did FC Barcelona become the first Spanish club to win the continental treble?",
+        "answers": [
+            { "text": "2008", "correct": false},
+            { "text": "2009", "correct": true},
+            { "text": "2010", "correct": false},
+            { "text": "2011", "correct": false}
+        ]
+    },
+    {
+        "question": "Who led the founding of the club?",
+        "answers": [
+            { "text": "Joan Gamper", "correct": true},
+            { "text": "Josep Bartomeu", "correct": false},
+            { "text": "Roman Abrahimovich", "correct": false},
+            { "text": "Josep Maria", "correct": false}
+        ]
+    },
+    {
+        "question": "Who wrote the club s anthem?",
+        "answers": [
+            { "text": "Joan Gamper", "correct": false},
+            { "text": "Josep Bartomeu", "correct": false},
+            { "text": "Roman Abrahimovich", "correct": false},
+            { "text": "Josep Maria", "correct": true}
+        ]
+    }
+    
+    ]
+}

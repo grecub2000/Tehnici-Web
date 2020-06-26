@@ -1,0 +1,30 @@
+{
+    "ravase": [
+    {
+        "id": 1,
+        "text1": "Come on, ",
+        "text2": "!You can do it!!" ,
+        "correct": "Good job (づ｡◕‿‿◕｡)づ ",
+        "wrong": "Noooooo" 
+    },
+    {
+        "id": 3,
+        "text1": ", if you get this one, you will pass all your exams! ",
+        "correct": "You are awesome!!" ,
+        "wrong": "Better luck next time"
+    },
+    {
+        "id":1,
+        "text1": "I believe in you, ",
+        "text2": "!",
+        "correct": "Wonderful :)" ,
+        "wrong": "You can do better"
+    },
+    {
+        "id":3,
+        "text1": ", you are the best!",
+        "correct": "If you keep on, you will set a new Highscore",
+        "wrong": "Y u so stupid bro?"
+    }
+    ]
+}

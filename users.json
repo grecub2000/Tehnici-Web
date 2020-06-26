@@ -1,0 +1,40 @@
+{
+    "users": [
+        {
+            "username": "usertest",
+            "password": "test",
+            "name": "User Test",
+            "email": "email@gmail.com",
+            "score": 0,
+            "date": "No Highscore",
+            "id": "baa1157b-948b-4f80-8ba1-e31e4be94b25"
+        },
+        {
+            "username": "aaaaaa",
+            "password": "aa",
+            "name": "aaa a",
+            "email": "aaaaa",
+            "score": 0,
+            "date": "No Highscore",
+            "id": "aa240586-09ec-4d17-852e-f35cd653a7a4"
+        },
+        {
+            "username": "abc",
+            "password": "abc",
+            "name": "abc",
+            "email": "abc",
+            "score": 0,
+            "date": "No Highscore",
+            "id": "dc45baa3-7c12-42be-87b4-3372b6919992"
+        },
+        {
+            "username": "admin",
+            "password": "admin",
+            "name": "Grecu Bogdan",
+            "email": "acbc2815@gmail.com",
+            "score": 4,
+            "date": "24-6-2020",
+            "id": "8fa5411d-4581-4850-b278-20e409243abb"
+        }
+    ]
+}

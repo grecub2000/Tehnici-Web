@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body style="background-image: linear-gradient(to left, #990000,#000066 20% );">
+    <header>
+        <nav>
+            <img src="img/logo.png" alt="Barcelona Logo" class="logo_img">
+            <div id="logo"><a href="index.html">FC BARCELONA</a></div>
+            <label for="drop" class="toggle" id='main-toggle'><span
+            class="nav-icon"></span></label>
+            <input type="checkbox" id="drop">
+            <ul class="menu">
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="squad.html">Squad</a></li>
+                <li>
+                    <label for="drop-1" class="toggle">Matches  ▼</label>
+                    <a href="#">Matches</a>
+                    <input type="checkbox" id="drop-1">
+                    <ul>
+                        <li><a href="https://www.skysports.com/barcelona-fixtures" target="_blank">Fixtures</a></li>
+                        <li><a href="#">Historic Matches</a></li>
+                        <li>
+                            <label for="drop-3" class="toggle">Results  ▼</label>
+                            <a href="#">Results</a>
+                            <input type="checkbox" id="drop-3">
+                            <ul>
+                                <li><a href="https://www.worldfootball.net/teams/fc-barcelona/2020/3/" target="_blank">2019/2020</a></li>
+                                <li><a href="https://www.worldfootball.net/teams/fc-barcelona/2019/3/" target="_blank">2018/2019</a></li>
+                                <li><a href="https://www.worldfootball.net/teams/fc-barcelona/2018/3/" target="_blank">2017/2018</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="drop-4" class="toggle">History  ▼</label>
+                    <a href="#">History</a>
+                    <input type="checkbox" id="drop-4">
+                    <ul>
+                        <li><a href="honours.html">Honours</a>
+                        <li><a href="https://www.fcbarcelona.com/en/club/history/legends">Legends</a>
+                        <li><a href="https://www.fcbarcelona.com/en/club/history/coaches">Coaches</a>
+                    </ul>
+                </li>
+                <li><a href="https://smarturl.it/FCBStore?CP=EUNS_BARCAREF_SITELINK_LT" target="_blank">Shop</a></li>
+                <li>
+                    <label for="drop-5" class="toggle">Social  ▼</label>
+                    <a href="#">Social</a>
+                    <input type="checkbox" id="drop-5">
+                    <ul>
+                        <li><a href="https://twitter.com/fcbarcelona" target="_blank">Twitter</a>
+                        <li><a href="https://www.facebook.com/fcbarcelona" target="_blank">Facebook</a>
+                        <li><a href="https://www.instagram.com/fcbarcelona/" target="_blank">Instagram</a>
+                        <li><a href="https://www.youtube.com/user/fcbarcelona" target="_blank">YouTube</a>
+                        <li><a href="https://www.tiktok.com/@fcbarcelona" target="_blank">TikTok</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="quiz-body" id="quiz-bd">
+        <div class="quiz-container">
+            <div class="controls">
+                <button id="showimg-btn" class="showimg btn">Hide Image</button>
+            </div>
+            <img id = "img-to-hide" src="img/messi-home.jpg" alt="Barca Squad" class="quiz-img">
+            <div id="start-title" class = "title hide"><a></a></div>
+            <div id="score-txt" class = "score hide"><a></a></div>
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div id="enc-txt" class ="enc hide"><a>You can do it!</a></div>
+            <div class="controls">
+                
+                <button id="start-btn" class="start-btn btn hide">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <button id="hscr-btn" class="hscr-btn btn hide">Highscores</button>
+                <button id="manage-btn" class="manage-btn btn hide">Manage Users</button>
+                <button id="logout-btn" class="logout btn hide">Logout</button>
+                <button id="btomenu-btn" class="btomenu btn hide">Back to Menu</button>
+                <button id="delete-btn" class="delete-btn btn hide">Delete User</button>
+                <button id="reset-scores-btn" class="reset-scores btn hide">Reset Highscores</button>
+                <button id="reset-yscores-btn" class="reset-scores btn hide">Reset Your Highscore</button>
+            
+            </div>
+            <div id="highscore-title" class = "highscore title hide">
+                <a>Current HighScores: </a>
+            </div>
+            <div id="highscore-text" class="highscore title hide">
+            
+            
+            </div>
+
+            <div id="manage-user" class = "manage-body hide">
+                <label for="userdel">Enter Username ID</label><br>
+                <input type="text" id="userdel"><br>
+                <a id="manage-title" class="title hide"> Users list: </a>
+            </div>
+
+            <div id="manage-text" class = "manage-text title hide"></div>
+            <form id = "login" class = "login-body">
+                <div id = "logininput">
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password"><br>
+                    <div id = "registerform" class="hide">
+                        <label for='password'>Confirm Password</label><br>
+                        <input type='password' id='confirmpassword'><br>
+                        <label for='fullname'>Full Name</label><br>
+                        <input type='text' id='fullname'><br>
+                        <label for='email'>Email</label><br>
+                        <input type='text' id='email'><br>
+
+                    </div>
+                </div> 
+                <div id = "loginbutons" class = "login-buttons">
+                    <button type="button" class = "btn" id = "loginbtn">Login</button>
+                    <button type="button" class = "btn" id = "registerbtn">Register</button>
+                </div>
+                <p id = "warning"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
