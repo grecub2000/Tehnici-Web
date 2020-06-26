@@ -330,7 +330,8 @@ function check_login()
 
 function login_succes()
 {   
-
+    HideButton.classList.remove('hide')
+    HideButton.classList.remove('hide')
     loginform.classList.add("hide")
     startBtn.classList.remove("hide")
     HighscoreButton.classList.remove("hide")
@@ -450,6 +451,8 @@ function register()
 function to_highscores()
 {
     resetState()
+    HideButton.classList.add('hide')
+    HideImage.classList.add('hide')
     if(localStorage.username == "admin")
     {
         ResetScores.classList.remove('hide')
@@ -569,6 +572,8 @@ function to_reset_score()
 
 function to_menu()
 {
+    HideButton.classList.remove('hide')
+    HideImage.classList.remove('hide')
     ResetYourScores.classList.add('hide')
     ResetScores.classList.add('hide')
     HighscoreTitle.classList.add('hide')
@@ -592,6 +597,8 @@ function to_menu()
 
 function to_manage()
 {
+    HideImage.classList.add('hide')
+    HideButton.classList.add('hide')
     MenuButton.classList.remove('hide')
     startText.classList.add('hide')
     scoreText.classList.add('hide')
